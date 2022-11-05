@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: hsl(30, 38%, 92%);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img{
+    height: 400px;
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.product-details{
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.grant-title{
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+}
+
+.title{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+.description{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.price1{
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 40px;
+    padding-right: 12px;
+    font-family: 'Fraunces';
+}
+
+.price2{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.btn{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    border-style: none;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(212, 21%, 14%);
+    transition: background 1s ease-out;
+}
+
+.btn svg{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-image img{
+        height: 400px;
+        width: 400px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+
+    .product-details{
+        width: 400px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .btn:hover{
+        background-color: hsl(212, 21%, 14%);
+        transition: background 0.2s;
+    }
+}
